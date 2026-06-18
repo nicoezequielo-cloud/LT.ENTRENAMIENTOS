@@ -945,16 +945,14 @@ button { cursor: pointer; font-family: inherit; }
 .redes__embed {
     width: 100%;
     max-width: 400px;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.06);
-    background: var(--bg);
-    line-height: 0;
 }
 
 .redes__embed .instagram-media {
+    margin: 0 !important;
     min-width: auto !important;
     width: 100% !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.06) !important;
 }
 
 .redes__cards {
