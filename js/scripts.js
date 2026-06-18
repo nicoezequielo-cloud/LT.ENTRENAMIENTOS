@@ -185,4 +185,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Popup
+    const popup = document.getElementById('popup');
+    const popupClose = document.getElementById('popupClose');
+    const popupOverlay = document.getElementById('popupOverlay');
+    const popupBtn = document.getElementById('popupBtn');
+
+    function showPopup() {
+        if (!localStorage.getItem('popupShown')) {
+            setTimeout(() => {
+                popup.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }, 2000);
+        }
+    }
+
+    function hidePopup() {
+        popup.classList.remove('active');
+        document.body.style.overflow = '';
+        localStorage.setItem('popupShown', 'true');
+    }
+
+    if (popup) {
+        popupClose.addEventListener('click', hidePopup);
+        popupOverlay.addEventListener('click', hidePopup);
+        popupBtn.addEventListener('click', hidePopup);
+        showPopup();
+    }
 });

@@ -366,6 +366,19 @@
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
     </button>
 
+    <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <div class="popup__overlay" id="popupOverlay"></div>
+        <div class="popup__content">
+            <button class="popup__close" id="popupClose" aria-label="Cerrar">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.3 5.71L12 12l6.3 6.29-1.42 1.42L12 13.41l-5.88 5.88-1.42-1.42L10.59 12 4.7 5.71 6.12 4.29 12 10.59l5.88-5.88z"/></svg>
+            </button>
+            <div class="popup__icon">&#9889;</div>
+            <h3 class="popup__title" id="popup-title">Primera clase de prueba gratis</h3>
+            <p class="popup__desc">Probá sin compromiso y empezá tu transformación hoy.</p>
+            <a href="#contacto" class="btn btn--primary popup__btn" id="popupBtn">Empezá ya</a>
+        </div>
+    </div>
+
     <script async src="//www.instagram.com/embed.js"></script>
     <script src="js/scripts.js" defer></script>
 </body>
