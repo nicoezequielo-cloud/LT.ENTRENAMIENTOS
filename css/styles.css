@@ -1006,6 +1006,16 @@ button { cursor: pointer; font-family: inherit; }
     color: #fff;
 }
 
+.redes__card--facebook .redes__card-icon {
+    background: #1877f2;
+    color: #fff;
+}
+
+.redes__card--linkedin .redes__card-icon {
+    background: #0a66c2;
+    color: #fff;
+}
+
 .redes__card-body {
     display: flex;
     flex-direction: column;
@@ -1048,6 +1058,16 @@ button { cursor: pointer; font-family: inherit; }
 
 .redes__card--spotify .redes__card-action {
     background: #1db954;
+    color: #fff;
+}
+
+.redes__card--facebook .redes__card-action {
+    background: #1877f2;
+    color: #fff;
+}
+
+.redes__card--linkedin .redes__card-action {
+    background: #0a66c2;
     color: #fff;
 }
 
