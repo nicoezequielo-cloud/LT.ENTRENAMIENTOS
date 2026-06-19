@@ -36,9 +36,10 @@ html {
 body {
     font-family: var(--font);
     color: var(--text);
-    background: var(--bg);
+    background: #1c1b20;
     line-height: 1.6;
     overflow-x: hidden;
+    min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -270,6 +271,7 @@ button { cursor: pointer; font-family: inherit; }
     position: relative;
     overflow: hidden;
     padding-top: var(--header-h);
+    background: var(--bg);
 }
 
 .hero__bg {
@@ -640,6 +642,10 @@ button { cursor: pointer; font-family: inherit; }
     .carousel__viewport {
         aspect-ratio: 4 / 3;
         border-radius: var(--radius);
+    }
+    .carousel__slide img {
+        object-fit: contain;
+        background: #f0ece6;
     }
     .carousel__btn {
         width: 40px;
@@ -1459,6 +1465,11 @@ button { cursor: pointer; font-family: inherit; }
 
     .carousel--hero .carousel__btn--next {
         right: 6px;
+    }
+
+    .carousel--hero .carousel__slide img {
+        object-fit: contain;
+        background: var(--bg);
     }
 
     .sobre-mi__stats {
