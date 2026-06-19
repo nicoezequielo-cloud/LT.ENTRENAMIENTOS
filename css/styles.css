@@ -1317,7 +1317,7 @@ button { cursor: pointer; font-family: inherit; }
     }
 
     .carousel--hero .carousel__viewport {
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 4 / 5;
     }
 
     .servicios__grid {
@@ -1444,7 +1444,7 @@ button { cursor: pointer; font-family: inherit; }
     }
 
     .carousel--hero .carousel__viewport {
-        aspect-ratio: 3 / 4;
+        aspect-ratio: 4 / 5;
         border-radius: var(--radius);
     }
 
@@ -1459,11 +1459,6 @@ button { cursor: pointer; font-family: inherit; }
 
     .carousel--hero .carousel__btn--next {
         right: 6px;
-    }
-
-    .carousel--hero .carousel__slide img {
-        object-fit: contain;
-        background: #f0ece6;
     }
 
     .sobre-mi__stats {
