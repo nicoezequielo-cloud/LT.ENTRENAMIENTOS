@@ -30,6 +30,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    background: #1c1b20;
 }
 
 body {
@@ -1458,6 +1459,11 @@ button { cursor: pointer; font-family: inherit; }
 
     .carousel--hero .carousel__btn--next {
         right: 6px;
+    }
+
+    .carousel--hero .carousel__slide img {
+        object-fit: contain;
+        background: #f0ece6;
     }
 
     .sobre-mi__stats {
